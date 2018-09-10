@@ -290,6 +290,9 @@ def page_to_json(page_src,filename,tag):
 # ==== initialise
 path = "/usr/local/bin/chromedriver"
 origin_webpage = "https://au.indeed.com/"
+
+account = "franklee940611@gmail.com"
+password = "9900testing"
 browser = webdriver.Chrome(path)
 
 browser.get(origin_webpage)
@@ -297,9 +300,9 @@ browser.get(origin_webpage)
 # ==== simulate to login the website
 browser.find_element_by_link_text("Sign in").click()
 browser.find_element_by_id("signin_email").clear()
-browser.find_element_by_id("signin_email").send_keys("franklee940611@gmail.com")
+browser.find_element_by_id("signin_email").send_keys(account)
 browser.find_element_by_id("signin_password").clear()
-browser.find_element_by_id("signin_password").send_keys("ipALL245m4a1lcrfr")
+browser.find_element_by_id("signin_password").send_keys(password)
 browser.find_element_by_id("signin_remember").click()
 browser.find_element_by_xpath("(.//*[normalize-space(text()) and normalize-space(.)='Keep me signed in on this device.'])[1]/following::button[1]").submit()
 
