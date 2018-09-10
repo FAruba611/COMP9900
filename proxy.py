@@ -18,8 +18,7 @@ import requests
 
 _BE_PROXY_QUEUE = Queue()
 _file_path = 'mt_proxy.txt'
-_DISPLAY_LINK = 50
-name_appear = []
+
 
 
 class Consumer_Thread(Thread):
