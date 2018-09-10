@@ -149,6 +149,7 @@ def page_to_json(page_src,filename,tag):
 
 # main()
 # ==== initialise
+name_appear = []
 path = "/usr/local/bin/chromedriver"
 origin_webpage = "https://au.indeed.com/"
 
